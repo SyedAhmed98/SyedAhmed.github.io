@@ -1,5 +1,9 @@
-.text-accent-yellow {
+.text-custom-yellow {
     color: #84B026;
+}
+
+.text-custom-blue {
+    color: #217373;
 }
 
 .text-custom-white {
@@ -20,4 +24,8 @@
 
 .bg-custom-navy {
     background-color: #173540;
+}
+
+.bg-grid-img {
+    background-image: url(./Assets/BG_Grid.svg);
 }
