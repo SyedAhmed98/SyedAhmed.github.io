@@ -1,0 +1,23 @@
+.text-accent-yellow {
+    color: #84B026;
+}
+
+.text-custom-white {
+    color: #F2F2F2;
+}
+
+.font-custom-mono {
+    font-family: "Space Mono", monospace;
+}
+
+.bg-custom-slate {
+    background-color: #3D3D3D;
+}
+
+.bg-custom-white {
+    background-color: #F2F2F2;
+}
+
+.bg-custom-navy {
+    background-color: #173540;
+}
