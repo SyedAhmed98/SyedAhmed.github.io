@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 
-<!-- Make main header animated with entrance and mouse over effects.
+<!-- Fonts Used: https://fonts.google.com/share?selection.family=DM%20Mono:wght@300;400%7CSpace%20Mono:ital,wght@0,400;1,700 -->
+
+<!--
+    Make main header animated with entrance and mouse over effects.
     Maybe make grid background animated and move away on mouse over instead of header.
-    Maybe add contact details to to of page via some icons. -->
+    Maybe add contact details to to of page via some icons.
+    ~~Hide horizontal scroll.~~
+-->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -10,58 +15,56 @@
     <meta charset="utf-8">
     <title>SyedAhmed98</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
 
-<body class="bg-custom-white">
-    <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-custom-slate bg-grid-img">
-        <div class="flex flex-col place-items-center text-custom-yellow">
-            <p class="text-9xl font-custom-mono">Hi, I'm</p>
-            <p class="text-9xl font-custom-mono font-bold italic">Syed Ahmed</p>
+<body>
+    <div class="container-snap snap-y snap-mandatory- h-screen overflow-scroll ">
+        <div class="snap-start min-h-screen flex items-center justify-center text-8xl bg-custom-slate">
+            <div class="flex flex-col place-items-center text-custom-yellow object-top  animate__animated animate__fadeIn">
+                <p id="headerOne" class="text-8xl font-header ">Hi, I'm</p>
+                <p id="headerTwo" class="text-9xl font-header font-bold italic">Syed Ahmed</p>
+            </div>
         </div>
-    </header>
-    <section class="max-w-lg m-auto text-slate-900">
-        <div class="flex">
-            <p class="text-8xl font-custom-mono text-custom-blue">ABOUT ME</p>
+        <div class="snap-start min-h-screen flex items-center justify-center text-8xl bg-custom-white ">
+            <div class="flex flex-col py-12 w-2/3 max-w-screen-xl">
+                <p class="text-8xl font-header text-custom-blue mb-6">ABOUT ME</p>
+                <div class="text-2xl font-body flex flex-col space-y-6 text-justify">
+                    <p>Hello, my name is Syed and I am a Junior C# Developer with Sparta Global. I have experience working as a web developer for a small e-commerce company. Though my title was "Web Developer" I mostly worked on creating automations. Such
+                        as an automation that moved stock between warehouses and amazon warehouses via various Amazon API's.
+                    </p>
+                    <p>Technology is my passion, which is made evident by my achieving of a first class computing degree from the University of Greenwich. All the small bits of experience that I have accumulated over the years has lead me to this career
+                        path.
+                    </p>
+                </div>
+            </div>
         </div>
-        <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a magna non varius. Proin leo felis, euismod non porta eget, varius sit amet sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla nec pulvinar nisi. Vivamus non
-            facilisis lacus, et volutpat libero. Nulla ac odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec laoreet sem, semper molestie libero.
-        </p>
-        <p class="mb-4">
-            Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus. Nunc sed elit ac tellus tempor
-            cursus. Suspendisse potenti. Vestibulum varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum ipsum, id consequat nulla nunc in ligula.
-        </p>
-        <p class="mb-12 text-3xl">
-            Include contact details here.
-        </p>
-    </section>
-    <section class="flex flex-col grow bg-custom-navy">
-        <div class="flex m-auto text-custom-blue">
-            <p class="text-8xl mt-12 font-custom-mono">PROJECTS</p>
+        <div class="snap-start min-h-screen flex items-center justify-center text-8xl bg-custom-navy ">
+            <div class="flex flex-col py-12 w-2/3 max-w-screen-xl">
+                <p class="text-8xl font-header text-custom-blue mb-6">PROJECTS</p>
+                <p class="text-2xl font-body text-custom-white flex flex-col space-y-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus accumsan purus, et cursus diam accumsan quis. Nulla gravida ultricies nibh dapibus consectetur. Donec mattis sollicitudin nibh eget posuere. Aliquam erat volutpat.
+                    Praesent accumsan lectus at ullamcorper ultricies. Pellentesque in ex magna. Nunc convallis facilisis orci, sed lacinia enim condimentum ac. Nulla rutrum vel erat vel lobortis. Aliquam pharetra odio quis neque mattis, vitae luctus
+                    quam facilisis. Aenean porta orci fermentum libero aliquet molestie. Vestibulum vitae nisi facilisis, iaculis mi ut, placerat urna. Morbi mollis in neque sed fringilla. Aliquam ultrices sem ut libero tempor cursus. Nam venenatis ut
+                    magna quis porta. Morbi mollis fringilla posuere</p>
+            </div>
         </div>
-        <div class="max-w-lg m-auto text-custom-white">
-            <p class="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a magna non varius. Proin leo felis, euismod non porta eget, varius sit amet sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla nec pulvinar nisi. Vivamus non
-                facilisis lacus, et volutpat libero. Nulla ac odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec laoreet sem, semper molestie libero.
-            </p>
-            <p class="mb-4">
-                Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus. Nunc sed elit ac tellus tempor
-                cursus. Suspendisse potenti. Vestibulum varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum ipsum, id consequat nulla nunc in ligula.
-            </p>
-            <p class="mb-12">
-                Nulla pharetra lacinia nisi, vitae mollis tellus euismod id. Mauris porta dignissim hendrerit. Cras id velit varius, fermentum lectus vitae, ultricies dolor. In bibendum rhoncus purus vel rutrum. Nam vulputate imperdiet fringilla. Donec blandit libero
-                massa. Suspendisse dictum diam mauris, vitae fermentum dolor tincidunt in. Pellentesque sollicitudin venenatis dolor, vitae scelerisque elit ultrices eu. Donec eget sodales risus, quis dignissim neque.
-            </p>
-        </div>
-    </section>
-    <!-- <section class="flex flex-col grow bg-custom-white">
-        <footer class="mt-6 mb-6 m-auto italic">Created by Syed Ahmed</footer>
-    </section> -->
+    </div>
 
-
-
+    <script>
+        var element = document.getElementById('headerTwo');
+        var typewriter = new Typewriter(element, {
+            loop: false,
+            cursor: '_',
+            delay: 75,
+        });
+        typewriter
+            .pauseFor(500)
+            .typeString('Syed Ahmed')
+            .start();
+    </script>
 </body>
 
 </html>
