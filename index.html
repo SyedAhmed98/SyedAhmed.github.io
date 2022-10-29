@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <!-- Fonts Used: https://fonts.google.com/share?selection.family=DM%20Mono:wght@300;400%7CSpace%20Mono:ital,wght@0,400;1,700 -->
 
 <!--
-    Make main header animated with entrance and mouse over effects.
-    Maybe make grid background animated and move away on mouse over instead of header.
     Maybe add contact details to to of page via some icons.
-    ~~Hide horizontal scroll.~~
+    Download and include all libraries used.
 -->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -19,24 +16,31 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.min.js"></script>
+    <script src="./dynamicBackgroundGrid.js" defer></script>
 </head>
 
 <body>
     <div class="container-snap snap-y snap-mandatory- h-screen overflow-scroll ">
         <div class="snap-start min-h-screen flex items-center justify-center text-8xl bg-custom-slate">
-            <div class="flex flex-col place-items-center text-custom-yellow object-top  animate__animated animate__fadeIn">
-                <p id="headerOne" class="text-8xl font-header ">Hi, I'm</p>
-                <p id="headerTwo" class="text-9xl font-header font-bold italic">Syed Ahmed</p>
+            <div class="relative h-screen z-0 animate__animated animate__fadeIn animate__slow">
+                <div id="dynamicBackground" class="bg-cover "></div>
+                <div class="absolute inset-0 flex justify-center items-center z-10 ">
+                    <div id="headerOne" class="flex flex-col place-items-center text-custom-yellow object-top">
+                        <p class="text-8xl font-header ">Hi, I'm</p>
+                        <p id="headerTwo" class="text-9xl font-header font-bold italic">Syed Ahmed</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="snap-start min-h-screen flex items-center justify-center text-8xl bg-custom-white ">
             <div class="flex flex-col py-12 w-2/3 max-w-screen-xl">
                 <p class="text-8xl font-header text-custom-blue mb-6">ABOUT ME</p>
                 <div class="text-2xl font-body flex flex-col space-y-6 text-justify">
-                    <p>Hello, my name is Syed and I am a Junior C# Developer with Sparta Global. I have experience working as a web developer for a small e-commerce company. Though my title was "Web Developer" I mostly worked on creating automations. Such
-                        as an automation that moved stock between warehouses and amazon warehouses via various Amazon API's.
+                    <p>My name is Syed and I am a Junior C# Developer at Sparta Global. I have experience working as a web developer for a small e-commerce company. Though my title was "Web Developer" I mostly worked on creating automations. Such as an automation
+                        that moved stock between warehouses and amazon warehouses via various Amazon API's.
                     </p>
-                    <p>Technology is my passion, which is made evident by my achieving of a first class computing degree from the University of Greenwich. All the small bits of experience that I have accumulated over the years has lead me to this career
+                    <p>Technology is my passion, which is made evident by my achievement of a first class computing degree from the University of Greenwich. All the small bits of experience that I have accumulated over the years have lead me to this career
                         path.
                     </p>
                 </div>
@@ -61,7 +65,7 @@
             delay: 75,
         });
         typewriter
-            .pauseFor(500)
+            .pauseFor(1000)
             .typeString('Syed Ahmed')
             .start();
     </script>
