@@ -1,7 +1,7 @@
 let pointGridArr = [];
 let density = 32;
-let noiseSpeed = 0.004;
-let noiseScale = 200;
+let noiseSpeed = 0.01;
+let noiseScale = 500;
 let currentNoiseZ = 0;
 let pointColour = "33, 115, 115";
 
@@ -19,7 +19,7 @@ function draw() {
         for (let x = 0; x < windowWidth + density; x += density) {
 
             let noiseMap = noise(x / noiseScale, y / noiseScale, currentNoiseZ);
-            let opacity = map(noiseMap, 0, 1, 0, 0.5);
+            let opacity = map(noiseMap, 0, 1, 0, 0.75);
             let size = map(noiseMap, 0, 1, 2, 32);
 
             fill(`rgba(${pointColour}, ${opacity})`);
