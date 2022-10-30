@@ -29,6 +29,14 @@ html {
     /* Firefox */
 }
 
+.font-header {
+    font-family: "Space Mono", monospace;
+}
+
+.font-body {
+    font-family: 'DM Mono', monospace;
+}
+
 .text-custom-yellow {
     color: #84B026;
 }
@@ -45,16 +53,12 @@ html {
     color: #161F30;
 }
 
+.text-custom-slate {
+    color: #3D3D3D;
+}
+
 .text-size-header {
     font-size: 150px;
-}
-
-.font-header {
-    font-family: "Space Mono", monospace;
-}
-
-.font-body {
-    font-family: 'DM Mono', monospace;
 }
 
 .bg-custom-slate {
@@ -65,10 +69,10 @@ html {
     background-color: #F2F2F2;
 }
 
-.bg-custom-navy {
-    background-color: #173540;
+.bg-custom-blue {
+    background-color: #217373;
 }
 
-.bg-grid-img {
-    background-image: url(./Assets/BG_Grid.svg);
+.bg-custom-navy {
+    background-color: #173540;
 }
